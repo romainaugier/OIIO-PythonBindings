@@ -1,0 +1,13 @@
+[requires]
+openimageio/2.4@pythonbindings/1.0
+
+[generators]
+cmake
+
+[options]
+*:shared=True
+
+[imports]
+bin, *.dll -> ./bin
+lib, *.pyd -> ./
+lib, *.py -> ./
