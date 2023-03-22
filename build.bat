@@ -35,7 +35,7 @@ if %errorlevel% neq 0 (
 )
 
 cd openimageio
-conan create . openimageio/2.4@pythonbindings/1.0 -o with_ffmpeg=False -o *:shared=True
+conan create . openimageio/2.4@pythonbindings/1.0 -o with_ffmpeg=False -o *:shared=True --build missing
 
 cd ..
 conan install .
