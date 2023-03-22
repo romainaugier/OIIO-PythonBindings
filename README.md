@@ -1,7 +1,7 @@
 # OIIO-PythonBindings
 
-Python bindings for OpenImageIO with python 3.10. It uses (Conan)[https://conan.io] to build the custom recipe
-you can find in *openimageio/conanfile.py*
+Python bindings for OpenImageIO. It uses [Conan 1.59.0](https://conan.io) to build the custom recipe
+you can find in *openimageio/conanfile.py*.
 
 ## Windows 
 
@@ -17,7 +17,7 @@ cd oiiobindings
 ./setup_env.bat
 python
 >>> import OpenImageIO as oiio
->>>...
+>>> ...
 ```
 
 ## Linux
