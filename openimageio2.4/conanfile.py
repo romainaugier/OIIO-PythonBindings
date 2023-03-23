@@ -4,6 +4,7 @@ from conans import ConanFile, CMake, tools
 from conans.errors import ConanInvalidConfiguration
 import functools
 import os
+import sys
 
 required_conan_version = ">=1.45.0"
 
@@ -249,6 +250,9 @@ set (OIIO_USING_IMATH 3)
         cmake.definitions["EMBEDPLUGINS"] = True
         cmake.definitions["USE_PYTHON"] = self.options.python_bindings
         cmake.definitions["USE_EXTERNAL_PUGIXML"] = True
+
+        if self.options.python_bindings:
+            cmake.definitions["PYBIND11_FINDPYTHON"] = True
 
         # OIIO CMake files are patched to check USE_* flags to require or not use dependencies
         cmake.definitions["USE_JPEGTURBO"] = self.options.with_libjpeg == "libjpeg-turbo"

@@ -34,8 +34,16 @@ if %errorlevel% neq 0 (
     echo conan 1.59 found
 )
 
-cd openimageio
+cd openimageio2.4
 conan create . openimageio/2.4@pythonbindings/1.0 -o with_ffmpeg=False -o *:shared=True --build missing
 
 cd ..
 conan install .
+
+for /f "tokens=*" %%a in ('dir /ad /b /s ^| findstr site-packages\OpenImageIO') do set PYDIR=%%a
+
+xcopy %PYDIR% bin /Y
+
+set PYDIR=%PYDIR:site-packages\OpenImageIO=%
+
+rmdir /s /q %PYDIR%
