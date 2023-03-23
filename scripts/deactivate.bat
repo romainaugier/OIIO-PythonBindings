@@ -1,3 +1,5 @@
+@echo off
+
 rem Clean the virtual environment
 
 set PATH=%__OLDPATH%

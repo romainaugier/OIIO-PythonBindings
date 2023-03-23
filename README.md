@@ -1,9 +1,10 @@
 # OIIO-PythonBindings
 
-![Py 3.10](https://github.com/romainaugier/OIIO-PythonBindings/actions/workflows/build-windows-310.yml/badge.svg)
+![Py 3.10](https://github.com/romainaugier/OIIO-PythonBindings/actions/workflows/windows-py310.yml/badge.svg)
+![Py 3.9](https://github.com/romainaugier/OIIO-PythonBindings/actions/workflows/windows-py39.yml/badge.svg)
 
 Python bindings for OpenImageIO. It uses [Conan 1.59.0](https://conan.io) to build the custom recipe
-you can find in *openimageio/conanfile.py*.
+you can find in *openimageio*.*/conanfile.py*.
 
 If you encounter this error 
 ```

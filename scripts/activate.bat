@@ -1,3 +1,5 @@
+@echo off
+
 rem Setup the virtual environment to run OpenImageIO
 
 set __OLDPATH=%PATH%
