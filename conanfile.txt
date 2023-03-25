@@ -9,5 +9,6 @@ cmake
 
 [imports]
 bin, *.dll -> ./bin
+lib, *.so* -> ./bin
 lib, *.pyd -> ./
 lib, *.py -> ./
