@@ -40,6 +40,8 @@ python
 ```
 
 ## Linux
+
+### Building
 ```sh
 git clone https://github.com/romainaugier/OIIO-PythonBindings.git
 cd OIIO-PythonBindings
