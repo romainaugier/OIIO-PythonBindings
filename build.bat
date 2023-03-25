@@ -7,7 +7,7 @@ if %errorlevel% neq 0 (
     echo Python can't be found, please install it and make it available in the PATH before continuing
     exit /B 1
 ) else (
-    echo Found python
+    echo Found Python
 )
 
 where cmake
