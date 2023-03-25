@@ -252,6 +252,7 @@ set (OIIO_USING_IMATH 3)
         cmake.definitions["USE_EXTERNAL_PUGIXML"] = True
 
         if self.options.python_bindings:
+            cmake.definitions["PYTHON_VERSION"] = sys.version
             cmake.definitions["PYBIND11_FINDPYTHON"] = True
 
         # OIIO CMake files are patched to check USE_* flags to require or not use dependencies
