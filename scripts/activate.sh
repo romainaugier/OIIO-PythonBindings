@@ -1,7 +1,9 @@
 #!/bin/bash
 
 export __OLDPATH=$PATH
+export __OLD_LB_LIBRARY_PATH=$LD_LIBRARY_PATH
 export __OLDPYTHONPATH=$PYTHONPATH
 
-export PATH=$PWD/bin:$PATH
-export PYTHONPATH=$PWD/bin:$PYTHONPATH
+export PATH="$PWD/bin":$PATH
+export LD_LIBRARY_PATH="$PWD/bin":$LD_LIBRARY_PATH
+export PYTHONPATH="$PWD/bin":$PYTHONPATH
